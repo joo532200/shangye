@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f2ea;
+  color: #2f241d;
+}
+
+.bg-luxury {
+  background:
+    radial-gradient(circle at top right, rgba(255,255,255,0.9), transparent 35%),
+    linear-gradient(135deg, #f7efe7 0%, #efe0d1 50%, #e8d3bf 100%);
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.62);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.soft-border {
+  border: 1px solid rgba(255,255,255,0.7);
+}
