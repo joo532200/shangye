@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #07162d;
+  color: #ffffff;
+}
+
+.enterprise-bg {
+  background:
+    radial-gradient(circle at top center, rgba(255,77,103,0.14), transparent 20%),
+    radial-gradient(circle at 20% 20%, rgba(66,103,178,0.18), transparent 25%),
+    linear-gradient(180deg, #07162d 0%, #081832 45%, #071426 100%);
+}
