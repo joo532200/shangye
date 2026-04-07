@@ -48,6 +48,7 @@ export default function Page() {
       <Navbar />
 
       <section id="home" className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-16 pt-14 lg:px-10 lg:pb-24 lg:pt-20">
+        <div className="pointer-events-none absolute inset-0 grid-overlay opacity-60" />
         <div className="glow-orb left-[-100px] top-[40px] h-[260px] w-[260px] bg-[rgba(245,197,66,0.14)] animate-pulseGlow" />
         <div className="glow-orb right-[-120px] top-[160px] h-[320px] w-[320px] bg-[rgba(245,197,66,0.10)] animate-pulseGlow" />
        
