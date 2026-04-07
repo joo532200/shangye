@@ -131,7 +131,7 @@ export default function Page() {
                 <div className="absolute left-1/2 top-1/2 h-[340px] w-[340px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(245,197,66,0.08)] animate-spinSlow" />
                 <div className="absolute left-1/2 top-1/2 h-[240px] w-[240px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(245,197,66,0.12)] animate-spinSlow [animation-direction:reverse]" />
                 <iframe
-                  src="https://www.tradingview.com/chart/?symbol=OANDA%3AXAUUSD&utm_source=&utm_medium=&utm_campaign=&utm_term=OANDA%3AXAUUSD"
+                  src="https://https://s.tradingview.com/widgetembed/?frameElementId=tradingview_xauusd&symbol=OANDA:XAUUSD&interval=60&theme=dark&style=1&timezone=Asia%2FBangkok&withdateranges=1&hide_side_toolbar=0&allow_symbol_change=1"
     className="h-[400px] w-full rounded-xl"
   />
             <div className="absolute right-[-80px] top-[60px] w-[200px] rounded-xl border border-[#f5c542]/20 bg-[#111111] p-4 shadow-[0_0_30px_rgba(245,197,66,0.15)]">
