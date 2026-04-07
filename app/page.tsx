@@ -128,32 +128,34 @@ export default function Page() {
             transition={{ delay: 0.15, duration: 0.7 }}
             className="relative rounded-[2rem] border border-[rgba(245,197,66,0.14)] bg-[#111111] p-6 shadow-[0_10px_40px_rgba(245,197,66,0.10)]"
           >
-              <div className="absolute left-1/2 top-1/2 h-[340px] w-[340px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(245,197,66,0.08)] animate-spinSlow" />
-              <div className="absolute left-1/2 top-1/2 h-[240px] w-[240px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(245,197,66,0.12)] animate-spinSlow [animation-direction:reverse]" />
+              iframe
+  src="https://s.tradingview.com/widgetembed/?symbol=OANDA:XAUUSD&interval=60&theme=dark"
+  className="w-full h-[400px] rounded-xl"
+/>
 
-            <div className="rounded-[1.5rem] border border-[rgba(245,197,66,0.12)] bg-[#0b0b0b] p-8">
-              <div className="text-sm tracking-[0.25em] text-[#f5c542]">策略示例</div>
-              <h2 className="mt-4 text-2xl font-bold text-white">今日黄金策略区间参考</h2>
+<div className="absolute right-[-80px] top-[60px] w-[200px] bg-[#111111] border border-[#f5c542]/20 rounded-xl p-4 shadow-[0_0_30px_rgba(245,197,66,0.15)]">
+  <div className="text-white text-sm">Cross</div>
+  <div className="text-[#f5c542] mt-2 text-lg font-bold">20X</div>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl border border-[rgba(245,197,66,0.12)] bg-[#121212] p-5">
-                  <div className="text-sm text-white/50">关键支撑</div>
-                  <div className="mt-2 text-3xl font-bold text-white">2328 - 2335</div>
-                </div>
-                <div className="rounded-2xl border border-[rgba(245,197,66,0.12)] bg-[#121212] p-5">
-                  <div className="text-sm text-white/50">关键阻力</div>
-                  <div className="mt-2 text-3xl font-bold text-white">2368 - 2375</div>
-                </div>
-              </div>
+  <div className="mt-4 text-xs text-gray-400">Available</div>
+  <div className="text-white text-sm">18982 USDT</div>
 
-              <div className="mt-5 rounded-2xl border border-[rgba(245,197,66,0.12)] bg-[#121212] p-5">
-                <div className="text-sm text-white/50">分析要点</div>
-                <p className="mt-3 text-sm leading-8 text-white/70">
-                  关注回踩支撑后的企稳信号，优先考虑确认节奏后再跟进。若强压区间无法突破，
-                  需注意短线震荡或回落风险。
-                </p>
-              </div>
-            </div>
+  <button className="mt-4 w-full bg-[#f5c542] text-black py-2 rounded-lg">
+    Buy
+  </button>
+</div>
+            
+
+          
+                 
+                  
+                
+    
+
+              
+              
+              
+          
           </motion.div>
         </div>
       </section>
