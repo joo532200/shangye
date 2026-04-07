@@ -47,7 +47,10 @@ export default function Page() {
     <main className="enterprise-bg min-h-screen bg-[#050505] text-white">
       <Navbar />
 
-      <section id="home" className="mx-auto max-w-7xl px-6 pb-16 pt-14 lg:px-10 lg:pb-24 lg:pt-20">
+      <section id="home" className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-16 pt-14 lg:px-10 lg:pb-24 lg:pt-20">
+        <div className="glow-orb left-[-100px] top-[40px] h-[260px] w-[260px] bg-[rgba(245,197,66,0.14)] animate-pulseGlow" />
+        <div className="glow-orb right-[-120px] top-[160px] h-[320px] w-[320px] bg-[rgba(245,197,66,0.10)] animate-pulseGlow" />
+       
         <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <motion.div
@@ -89,14 +92,14 @@ export default function Page() {
             >
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-full bg-[#f5c542] px-6 py-3 text-sm font-medium text-black"
+                className="inline-flex items-center gap-2 rounded-full bg-[#f5c542] px-6 py-3 text-sm font-medium text-black shadow-[0_0_30px_rgba(245,197,66,0.25)] transition hover:scale-[1.05] hover:shadow-[0_0_50px_rgba(245,197,66,0.45)]"
               >
                 立即领取今日策略
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
                 href="#services"
-                className="rounded-full border border-[rgba(245,197,66,0.18)] bg-[#111111] px-6 py-3 text-sm text-white"
+                className="rounded-full border border-[rgba(245,197,66,0.18)] bg-[#111111] px-6 py-3 text-sm text-white transition hover:border-[#f5c542] hover:shadow-[0_0_20px_rgba(245,197,66,0.25)]"
               >
                 查看服务内容
               </a>
@@ -122,8 +125,11 @@ export default function Page() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.15, duration: 0.7 }}
-            className="rounded-[2rem] border border-[rgba(245,197,66,0.14)] bg-[#111111] p-6 shadow-[0_10px_40px_rgba(245,197,66,0.10)]"
+            className="relative rounded-[2rem] border border-[rgba(245,197,66,0.14)] bg-[#111111] p-6 shadow-[0_10px_40px_rgba(245,197,66,0.10)]"
           >
+              <div className="absolute left-1/2 top-1/2 h-[340px] w-[340px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(245,197,66,0.08)] animate-spinSlow" />
+              <div className="absolute left-1/2 top-1/2 h-[240px] w-[240px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(245,197,66,0.12)] animate-spinSlow [animation-direction:reverse]" />
+
             <div className="rounded-[1.5rem] border border-[rgba(245,197,66,0.12)] bg-[#0b0b0b] p-8">
               <div className="text-sm tracking-[0.25em] text-[#f5c542]">策略示例</div>
               <h2 className="mt-4 text-2xl font-bold text-white">今日黄金策略区间参考</h2>
@@ -168,7 +174,7 @@ export default function Page() {
             return (
               <div
                 key={item.title}
-                className="rounded-[2rem] border border-[rgba(245,197,66,0.14)] bg-[#111111] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+                className="rounded-[2rem] border border-[rgba(245,197,66,0.14)] bg-[#111111] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.35)] transition hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(245,197,66,0.12)]"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[rgba(245,197,66,0.10)] text-[#f5c542]">
                   <Icon className="h-6 w-6" />
@@ -232,7 +238,7 @@ export default function Page() {
           {team.map((member) => (
             <div
               key={member.name}
-              className="rounded-[2rem] border border-[rgba(245,197,66,0.14)] bg-[#111111] p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+              className="rounded-[2rem] border border-[rgba(245,197,66,0.14)] bg-[#111111] p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.35)] transition hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(245,197,66,0.12)]"
             >
               <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border-2 border-[#f5c542] bg-[linear-gradient(135deg,#1b1b1b,#0d0d0d)] text-2xl font-semibold text-white">
                 {member.name.slice(0, 1)}
