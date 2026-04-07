@@ -128,35 +128,22 @@ export default function Page() {
             transition={{ delay: 0.15, duration: 0.7 }}
             className="relative rounded-[2rem] border border-[rgba(245,197,66,0.14)] bg-[#111111] p-6 shadow-[0_10px_40px_rgba(245,197,66,0.10)]"
           >
-              iframe
-  src="https://s.tradingview.com/widgetembed/?symbol=OANDA:XAUUSD&interval=60&theme=dark"
-  className="w-full h-[400px] rounded-xl"
-/>
-
-<div className="absolute right-[-80px] top-[60px] w-[200px] bg-[#111111] border border-[#f5c542]/20 rounded-xl p-4 shadow-[0_0_30px_rgba(245,197,66,0.15)]">
-  <div className="text-white text-sm">Cross</div>
-  <div className="text-[#f5c542] mt-2 text-lg font-bold">20X</div>
-
-  <div className="mt-4 text-xs text-gray-400">Available</div>
-  <div className="text-white text-sm">18982 USDT</div>
-
-  <button className="mt-4 w-full bg-[#f5c542] text-black py-2 rounded-lg">
-    Buy
-  </button>
-</div>
-            
-
-          
-                 
-                  
-                
-    
-
-              
-              
-              
-          
-          </motion.div>
+                <div className="absolute left-1/2 top-1/2 h-[340px] w-[340px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(245,197,66,0.08)] animate-spinSlow" />
+                <div className="absolute left-1/2 top-1/2 h-[240px] w-[240px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(245,197,66,0.12)] animate-spinSlow [animation-direction:reverse]" />
+                <iframe
+                  src="https://s.tradingview.com/widgetembed/?symbol=OANDA:XAUUSD&interval=60&theme=dark"
+    className="h-[400px] w-full rounded-xl"
+  />
+            <div className="absolute right-[-80px] top-[60px] w-[200px] rounded-xl border border-[#f5c542]/20 bg-[#111111] p-4 shadow-[0_0_30px_rgba(245,197,66,0.15)]">
+             <div className="text-sm text-white">Cross</div>
+             <div className="mt-2 text-lg font-bold text-[#f5c542]">20X</div>
+              <div className="mt-4 text-xs text-gray-400">Available</div>
+               <div className="text-sm text-white">18982 USDT</div>
+              <button className="mt-4 w-full rounded-lg bg-[#f5c542] py-2 text-black">
+                   Buy
+                </button>
+              </div>
+            </motion.div>
         </div>
       </section>
 
