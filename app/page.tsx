@@ -135,13 +135,7 @@ export default function Page() {
     className="h-[400px] w-full rounded-xl"
   />
             <div className="absolute right-[-80px] top-[60px] w-[200px] rounded-xl border border-[#f5c542]/20 bg-[#111111] p-4 shadow-[0_0_30px_rgba(245,197,66,0.15)]">
-             <div className="text-sm text-white">Cross</div>
-             <div className="mt-2 text-lg font-bold text-[#f5c542]">20X</div>
-              <div className="mt-4 text-xs text-gray-400">Available</div>
-               <div className="text-sm text-white">18982 USDT</div>
-              <button className="mt-4 w-full rounded-lg bg-[#f5c542] py-2 text-black">
-                   Buy
-                </button>
+             
               </div>
             </motion.div>
         </div>
